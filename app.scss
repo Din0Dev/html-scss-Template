@@ -1,0 +1,11 @@
+// Abstracts
+@import "scss/abstracts/breakpoints";
+@import "scss/abstracts/mixins";
+@import "scss/abstracts/variables";
+// Layout
+@import "scss/layout/layout";
+// Components
+@import "scss/styles.scss";
+@import "scss/components/footer";
+@import "scss/components/header";
+@import "scss/components/section";

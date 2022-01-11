@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/SCSS template by DinoDev</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1 class="header__banner">Hello!</h1>
+        <p class="header__description">
+          This is Template HTML + SCSS With Reponsive
+        </p>
+        <div class="header__button">
+          <a href="#section">
+            <button class="btn-default">How to use</button>
+          </a>
+        </div>
+      </div>
+      <!-- Main -->
+      <div class="section" id="section">
+        <h2 class="heading">How to Use</h2>
+        <div class="row section__container">
+          <div class="col-3">
+            <div class="section__container__card">
+              <h2 class="heading">Reponsive</h2>
+              <ul>
+                <li>Use class name in common<br />eg: Row,Col-2,Col-3,...</li>
+                <li>Can edit grid to 12,24,32 in <b>layout.scss</b></li>
+                <li>
+                  We have 4 options for custom reponsive in class:
+                  <b>LARGE(1200px),MEDIUM(992px),SMALL(768px),XSMALL(576px)</b>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="section__container__card">
+              <h2 class="heading">Function Base</h2>
+              <ul>
+                <li>We have Function Base in <b>Mixin</b></li>
+                <li>Create with <b>@mixin animation(props)</b></li>
+                <li>Use call <b>@include animation(props)</b></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="section__container__card">
+              <h2 class="heading">Color</h2>
+              <ul>
+                <li>Set up Color with <b>variables</b></li>
+                <li>Create with <b>@color: #000000</b></li>
+                <li>Use call <b>background: $color</b></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="section__container__card">
+              <h2 class="heading">New CSS</h2>
+              <ul>
+                <li>
+                  Create file in folder <b>SCSS/components (example.scss)</b>
+                </li>
+                <li>
+                  Import to app.scss <br />
+                  <b>(@import(SCSS/components/example.scss))</b>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="section__container__card">
+              <h2 class="heading">Run Live SCSS</h2>
+              <ul>
+                <li>Run in terminal <bdo>npm run sass-compile</bdo></li>
+                <li>
+                  Import to <b>app.scss</b> <br />
+                  (@import(SCSS/components/example.scss))
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="section__container__card">
+              <h2 class="heading">Use Font Size</h2>
+              <ul>
+                <li>Please custom <b>PX</b> to <b>REM</b></li>
+                <li>eg: <b>font-size: 10px</b> => <b>font-size: 1rem</b></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="section__container__card">
+              <h2 class="heading">Folder</h2>
+              <ul>
+                <li><b>app.scss</b>: Import file in Folder SCSS</li>
+                <li>
+                  <b><center>Folder abtracts</center></b>
+                </li>
+                <li>
+                  <b>breakpoint</b>: Setup PX for Reponsive <br />
+                  <b>mixins</b>: Setup function css<br />
+                  <b>variables</b>: Setup color,fontsize,width,height default
+                </li>
+                <li>
+                  <b><center>Folder components</center></b>
+                </li>
+                <li>Setup css for page,components</li>
+                <li>
+                    <b><center>Folder layout</center></b>
+                  </li>
+                  <li>Setup grid,col for Reponsive</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer  -->
+      <div class="footer">
+        <p>Design by DinoDev</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.section{
+    .heading{
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 3rem;
+        color: $green;
+    }
+    background-color: $silverLight-40;
+    &__container{
+        padding: 2rem 0;
+        &__card{
+            .heading{
+                color: $main1;
+            }
+            ul {
+                list-style: none;
+                b{
+                    color: $main2;
+                }
+                li{
+                    border-top: 1px solid $silverDark;
+                    padding: 1rem 0.5rem;
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                    font-weight: bold;
+                    overflow-wrap: break-word;
+                }
+                li:nth-child(1){
+                    border-top: none;
+                }
+            }
+            margin: 1rem;
+            background-color:  $silverLight-50;
+            height: 400px;
+            border: 1px solid $silverLight-40;
+            border-radius: 1rem;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "saas",
+  "version": "1.0.0",
+  "description": "Learn SAAS",
+  "main": "index.js",
+  "scripts": {
+    "sass-compile": "sass app.scss app.css --no-source-map --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.45.1"
+  }
+}
